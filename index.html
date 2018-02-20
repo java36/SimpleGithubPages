@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Intro page</title>
+    <!-- mobil anpassning -->
+  <meta name="viewport"
+        content="width=device-width,
+                 initial-scale=1.0" />
+  <meta name="author" content="Jakob Rolandsson" />
+  <meta name="description" 
+        content="An introduction page" />
+  <meta name="keywords" 
+        content="html, intro, java17" />
+  <meta charset="UTF-8" />
+</head>
+<body style="padding-bottom: 1000px">
+  
+  <div id="headings">
+    <!-- Endast en per sida -->
+    <h1>Universe</h1>
+    <h2>Earth</h2>
+    <h3>Sweden</h3>
+    <h4>Stockholms län</h4>
+    <h5>SL</h5>
+    <h6>Pendeltåg</h6>  
+    <h6>Bussar</h6>
+  </div>
+    
+  <hr>
+    
+  <!-- Inline elements är element som endast innehållet text och möjligtvis andra inline element -->
+  <div id="inline-elements">
+    <label>
+      Google may be found at <a href="https://www.google.com">google.com</a>.
+        
+        <!-- Label får inte innehålla p-taggen, om du validerar sidan https://validator.w3.org/nu/#textarea så kommer den att ge ett error 
+        <p>
+            Visit for more information
+        </p>-->
+        
+        <span>Visit for more information</span>
+    </label>
+  </div>
+  <div id="block-elements">
+      <p>
+        Used for paragraphs, should be used for self-contained content in a specific topic
+      </p>
+      <p>
+        Another paragraph
+      </p>
+  </div>
+
+    <hr>
+    
+  <div id="whitespaces">
+    <p>
+      It doesn't matter how many white      spaces you put in,     browser will still     only render     one
+    </p>
+    <p>
+      The <br>
+      Same <br>
+      Applies <br>
+      To <br>
+      Row <br>
+      Breaks
+    </p>
+    <pre>
+      but, we     can
+      change    that,
+      using    the 
+      &lt;pre&gt; tag
+    </pre>
+  </div>
+    
+    <hr>
+    
+  <div id="document">
+    <p>
+      <sup>Superscript</sup> and <sub>Subscript </sub> should only only be used appropiate, not for styling.
+    </p>
+    <p>
+        Examle 1:
+            C<sub>6</sub>H<sub>12</sub>O<sub>6</sub> is the chemical formula for glucose
+    </p>
+      <hr>
+    <p>
+      Cite is used to present someone elses work
+    </p>
+    <figure>
+      <img alt="No picture" src="" width="100" height="100">
+      <figcaption>
+          <cite>No picture</cite> was created by me
+      </figcaption>
+    </figure>
+      
+      <hr>
+      
+    <p>
+      <abbr title="Abbrevation">abbr</abbr> is an abbreviation for abbrevation
+    </p>
+    
+      <hr>
+      
+    <p>
+      Both &lt;em&gt; and &lt;strong&gt; should only be used it changes the message
+    </p>
+    <p>
+      Example:
+        I <em>really</em> believe that you <strong>must</strong> do as you are told
+    </p>
+  </div>
+    
+    <hr>
+    
+  <div id="images">
+      <figure>
+        <img alt="Cat picture" src="https://static.pexels.com/photos/126407/pexels-photo-126407.jpeg" width="300">
+        <figcaption>A cat</figcaption>
+      </figure>
+      
+      <figure>
+        <img src="images/cat.jpeg" width="300">
+      </figure>
+      
+      <figure>
+        <img src="../google.png" width="300">
+      </figure>
+  </div>
+    
+    <hr>
+    
+  <div id="lists">
+      <!-- unordered list -->
+    <ul>
+      <li>Parrot</li>
+      <li>Eagle</li>
+      <li>Rabbit</li>
+    </ul>
+    <ul style="list-style-type: circle">
+      <li>Parrot</li>
+      <li>Eagle</li>
+      <li>Rabbit</li>
+    </ul>
+    <ul style="list-style-type: square">
+      <li>Parrot</li>
+      <li>Eagle</li>
+      <li>Rabbit</li>
+    </ul>
+    <ul style="list-style-type: none">
+      <li>Parrot</li>
+      <li>Eagle</li>
+      <li>Rabbit</li>
+    </ul>
+      
+      <hr>
+      
+      <!-- ordered list -->
+      <ol start="2">
+        <li>Mix two</li>
+        <li>Into one</li>
+        <li>Add the third</li>
+      </ol>
+      <ol type="I" start="10">
+        <li>Mix two</li>
+        <li>Into one</li>
+        <li>Add the third</li>
+      </ol>
+      <ol type="a" start="27">
+        <li>Mix two</li>
+        <li>Into one</li>
+        <li>Add the third</li>
+      </ol>
+      
+      <!-- definition list -->
+      <dl>
+        <dt>HTML</dt>
+          <dd>
+            Hyper text markup language
+          </dd>
+        <dt>CSS</dt>
+          <dd>
+            Cascading style sheet
+          </dd>
+      </dl>
+  </div>
+    
+    <hr>
+    
+  <div id="tables">
+    <table>
+      <thead>
+        <tr>
+          <th>Employee</th>
+          <th>Salary</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Kenneth</td>
+          <td>967$</td>
+        </tr>
+        <tr>
+          <td>Sam</td>
+          <td>433$</td>
+        </tr>
+      </tbody>
+      <tfoot>
+          <tr>
+            <td>Total</td>
+            <td>1430$</td>
+          </tr>
+      </tfoot>
+    </table>
+  </div>
+    
+    <hr>
+    
+  <div id="forms">
+    
+      <!-- action är dit vi skickar datan i formuläret -->
+    <form action="#">
+      <div>
+        <label>Username</label>
+        <input type="text"                                  placeholder="Insert username.."
+               maxlength="10"
+               required>
+      </div>
+      <div>
+        <label for="password_field">Password</label>
+        <input type="password" 
+               id="password_field" 
+               placeholder="Insert password..">
+      </div>
+      <div>
+        <label>Remember me</label>
+        <!-- name attribut används för att radio buttons ska veta vilka de tillhör -->
+        <input name="remember_me"
+               type="radio" id="remember_yes">
+        <label for="remember_yes">yes</label>
+        
+        <input name="remember_me" 
+               type="radio" id="remember_no" checked>
+        <label for="remember_no">no</label>
+      </div>
+      <div>
+        <label>Remember me duration</label>  
+        <select>
+          <option>3 months</option>
+          <option selected>6 months</option>
+          <option>9 months</option>
+        </select>
+      </div>
+      <!--<input type="submit" value="Skicka data..">-->
+        <button type="submit">Skicka data..</button>
+        <button type="reset">Rensa</button>
+    </form>
+  </div>
+    
+    <hr>
+    
+
+  <div id="semantics"> 
+      <!-- beskriva innehållet -->
+    <header>
+      <h1>Main topic</h1>
+      <label>Sub topic</label>
+    </header>
+      
+      <!-- Omsluter huvudinnehållet -->
+    <main>
+      <div>
+        This is main content  
+      </div>
+    </main>
+      
+      <!-- section grupper generiskt innehåll -->
+    <section>
+        <h2>Animals</h2>  
+        
+        <!-- article är ett självständigt innehåll, ska gå att plocka bort utan att "förstöra" dokumentet -->
+        <article>
+            <h3>Cats</h3>
+            some information about cats
+        </article>
+        <article>
+            <h3>Dogs</h3>
+            some information about dogs
+        </article>
+    </section>
+      
+      <!-- Information om innehållet, senast uppdaterad, vem som skapade inlägget etc.-->
+    <footer>
+        Created by <a href="mailto:abc@def.com">Jakob rolandsson</a> 
+    </footer>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
